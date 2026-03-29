@@ -5,8 +5,8 @@ import playImg from "../assets/Play.png"
 const Banner = () => {
   return (
     <div>
-      <div className="hero my-20">
-        <div className="hero-content flex-col lg:flex-row-reverse mx-auto gap-16">
+      <div className="hero my-12 lg:my-20">
+        <div className="hero-content flex flex-col md:flex-row lg:flex-row-reverse mx-auto gap-10 lg:gap-16">
           <img src={bannerImg} className="max-w-sm rounded-lg" />
           <div>
             <div className="flex items-center gap-1.5 bg-[#e1e7ffFF] rounded-[1000px] py-2 px-4 w-fit mb-6">

@@ -4,7 +4,7 @@ import cartImg from "../assets/products/shopping-cart.png"
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 w-7xl mx-auto">
+            <div className="navbar bg-base-100 max-w-7xl mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ const Navbar = () => {
     <a className="btn btn-ghost text-2xl text-[#4F39F6] font-bold">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 text-[#101727FF] font-semibold">
+    <ul className="menu menu-horizontal lg:px-1 text-[#101727FF] font-semibold">
       <li><a>Products</a></li>
       <li><a>Features</a></li>
       <li><a>Pricing</a></li>
@@ -31,10 +31,10 @@ const Navbar = () => {
       <li><a>FAQ</a></li>
     </ul>
   </div>
-  <div className="navbar-end space-x-4">
+  <div className="navbar-end space-x-2 md:space-x-4">
     <img src={cartImg} alt="" />
-    <p className='text-[#101727FF] font-semibold'>Login</p>
-    <button className="btn bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white px-4 py-3 rounded-[1000px] font-semibold border-none">Get Started</button>
+    <p className='text-[#101727FF] font-semibold hidden md:flex'>Login</p>
+    <button className="btn bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white px-4 py-3 rounded-[1000px] font-semibold border-none hidden md:flex">Get Started</button>
   </div>
 </div>
         </div>
