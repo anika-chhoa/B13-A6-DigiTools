@@ -1,6 +1,6 @@
 import { RiFocus2Fill } from "react-icons/ri";
 import bannerImg from "../assets/banner.png";
-import playImg from "../assets/Play.png"
+import playImg from "../assets/Play.png";
 
 const Banner = () => {
   return (
@@ -25,13 +25,13 @@ const Banner = () => {
               <br /> Explore Products
             </p>
             <div className="space-x-4">
-                <button className="btn bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white p-4 rounded-[1000px] font-semibold border-none">
-              Explore Products
-            </button>
-            <button className="btn text-[#4F39F6] p-4 rounded-[1000px] font-semibold border border-[#4F39F6] hover:bg-[#4F39F6] hover:text-white transition">
-              <img src={playImg} alt="" />
-              Watch Demo
-            </button>
+              <button className="btn bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white p-4 rounded-[1000px] font-semibold border-none">
+                Explore Products
+              </button>
+              <button className="btn text-[#4F39F6] p-4 rounded-[1000px] font-semibold border border-[#4F39F6] hover:bg-[#4F39F6] hover:text-white transition">
+                <img src={playImg} alt="" />
+                Watch Demo
+              </button>
             </div>
           </div>
         </div>
