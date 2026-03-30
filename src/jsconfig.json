@@ -1,7 +1,13 @@
+// {
+//   "compilerOptions": {
+//     "jsx": "react-jsx",
+//     "moduleResolution": "node"
+//   },
+//   "include": ["src"]
+// }
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "moduleResolution": "node"
+    "baseUrl": "."
   },
-  "include": ["src"]
+  "include": ["**/*"]
 }
