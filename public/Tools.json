@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Powerful AI-powered writing assistant that generates high-quality blog posts, emails, social media content, and marketing copy in seconds.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing tones & styles",
+      "SEO optimization"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Design Template Pack",
+    "description": "Premium collection of 500+ modern templates for social media, presentations, websites, and print materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "500+ customizable templates",
+      "Figma, Canva & PSD formats",
+      "Commercial license included"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access to 10,000+ high-quality photos, illustrations, icons, and videos for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10,000+ royalty-free assets",
+      "Weekly new uploads",
+      "4K photos & vectors"
+    ],
+    "icon": "📸"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "No-code automation suite to connect your favorite apps and save hours of manual work every week.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "1000+ app integrations",
+      "Drag & drop workflow builder",
+      "Unlimited automations"
+    ],
+    "icon": "⚙️"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional, ATS-optimized resumes and cover letters in minutes with AI assistance.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "",
+    "tagType": "",
+    "features": [
+      "ATS optimization",
+      "100+ modern templates",
+      "AI content suggestions"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "name": "Video Editing AI",
+    "description": "AI-powered video editor that automatically cuts, captions, and enhances your videos.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Auto cut & trim",
+      "AI subtitles & captions",
+      "4K export support"
+    ],
+    "icon": "🎥"
+  },
+  {
+    "id": 7,
+    "name": "Social Media Manager",
+    "description": "All-in-one tool to schedule, analyze, and grow your presence across all major social platforms.",
+    "price": 22,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Schedule posts across platforms",
+      "AI content suggestions",
+      "Advanced analytics"
+    ],
+    "icon": "📱"
+  },
+  {
+    "id": 8,
+    "name": "Notion Template Bundle",
+    "description": "Ultimate productivity system with 50+ premium Notion templates for business, personal, and student use.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "",
+    "tagType": "",
+    "features": [
+      "50+ premium templates",
+      "Second brain system",
+      "Lifetime updates"
+    ],
+    "icon": "📋"
+  },
+  {
+    "id": 9,
+    "name": "Brand Kit Generator",
+    "description": "Instantly create a complete professional brand identity with logos, color palettes, fonts, and brand guidelines using AI.",
+    "price": 35,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI logo generator",
+      "Unlimited color palettes",
+      "Brand guideline builder"
+    ],
+    "icon": "🌟"
+  }
+]
