@@ -10,6 +10,7 @@ import Tab from "./Components/Tab";
 import GetStarted from "./Components/GetStarted";
 import Pricing from "./Components/Pricing";
 import { ToastContainer, toast } from 'react-toastify';
+import ExploreProducts from "./Components/ExploreProducts";
 
 const fetchData = async () => {
     const res = await fetch("/Tools.json");
@@ -71,6 +72,7 @@ function App() {
       {/* <GetStarted getStartedData={getStartedData}></GetStarted> */}
       <GetStarted getStartedData={getStartedData}></GetStarted>
       <Pricing/>
+      <ExploreProducts/>
 
 
       <ToastContainer />
