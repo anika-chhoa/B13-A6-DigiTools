@@ -1,12 +1,8 @@
 import { use } from "react";
 import Card from "./card";
-import GetStarted from "./GetStarted";
 
-const fetchGetStartedData = async () => {
-  const res = await fetch("/GetStartedData.json");
-  return res.json();
-};
-const getStartedData = fetchGetStartedData();
+
+
 
 const Cards = ({ dataPromise, cartItems, setCartItems, total, setTotal }) => {
   const productTools = use(dataPromise);
@@ -25,7 +21,7 @@ const Cards = ({ dataPromise, cartItems, setCartItems, total, setTotal }) => {
           />
         ))}
       </div>
-      <GetStarted getStartedData={getStartedData}></GetStarted>
+      
     </div>
   );
 };

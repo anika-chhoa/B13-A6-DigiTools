@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
   const tagStyles = {
@@ -16,12 +17,23 @@ const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
       text: "text-[#0a883eFF]",
     },
   };
-  const [buyNowStatus, setBuyNowStatus] = useState(true);
+  // const [buyNowStatus, setBuyNowStatus] = useState(true);
+
+  const isAlreadyInCart = cartItems.some((item) => item.id === product.id);
+
+  const [isAdded, setIsAdded] = useState(isAlreadyInCart);
 
   const handleBuyNowBtn = ({ product }) => {
-    setBuyNowStatus(false);
+    if (isAlreadyInCart || isAdded) {
+      toast.error(`${product.name} is already in your cart!`);
+      return;
+    }
+
+    // setBuyNowStatus(false);
+    setIsAdded(true);
     setCartItems([...cartItems, product]);
-    setTotal(total+product.price)
+    setTotal(total + product.price);
+    toast.success(`${product.name} added to cart`);
   };
 
   return (
@@ -75,16 +87,24 @@ const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
           </ul>
           <div className="mt-6">
             <button
-              onClick={() => handleBuyNowBtn({product})}
-              className={`btn btn-block rounded-[100px]  ${buyNowStatus ? "bg-gradient-to-b from-[#4f39f6] to-[#9514fa]" : "btn-success"} text-white px-4 py-3 font-bold border-none`}
+              onClick={() => handleBuyNowBtn({ product })}
+              className={`btn btn-block rounded-[100px]  ${isAdded ? "btn-success" : "bg-gradient-to-b from-[#4f39f6] to-[#9514fa]"} text-white px-4 py-3 font-bold border-none`}
             >
-              {buyNowStatus ? (
+              {/* {buyNowStatus ? (
                 "Buy Now"
               ) : (
                 <>
                   <FaCheck className="inline mr-2" />
                   Added To Cart
                 </>
+              )} */}
+              {isAdded ? (
+                <>
+                  <FaCheck className="inline mr-2" />
+                  Added To Cart
+                </>
+              ) : (
+                "Buy Now"
               )}
             </button>
           </div>

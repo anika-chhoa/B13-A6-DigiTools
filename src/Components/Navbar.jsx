@@ -3,7 +3,7 @@ import cartImg from "../assets/products/shopping-cart.png"
 
 const Navbar = ({cartItems}) => {
     return (
-        <div>
+        <div className='fixed top-0 left-0 z-50 w-full bg-base-100 shadow-md'>
             <div className="navbar bg-base-100 max-w-7xl mx-auto">
   <div className="navbar-start">
     <div className="dropdown">

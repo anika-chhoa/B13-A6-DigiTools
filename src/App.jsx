@@ -7,12 +7,21 @@ import Carts from "./Components/Carts";
 import Navbar from "./Components/Navbar";
 import StatSection from "./Components/StatSection";
 import Tab from "./Components/Tab";
+import GetStarted from "./Components/GetStarted";
+import Pricing from "./Components/Pricing";
+import { ToastContainer, toast } from 'react-toastify';
 
 const fetchData = async () => {
     const res = await fetch("/Tools.json");
     return res.json();
   };
   const dataPromise = fetchData(); 
+
+  const fetchGetStartedData = async () => {
+    const res = await fetch("/GetStartedData.json");
+    return res.json();
+  };
+  const getStartedData = fetchGetStartedData();
 
 
 function App() {
@@ -60,6 +69,11 @@ function App() {
         </Suspense>
       )}
       {/* <GetStarted getStartedData={getStartedData}></GetStarted> */}
+      <GetStarted getStartedData={getStartedData}></GetStarted>
+      <Pricing/>
+
+
+      <ToastContainer />
     </>
   );
 }

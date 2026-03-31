@@ -1,7 +1,10 @@
+import { toast } from "react-toastify";
+
 const Cart = ({ cart, cartItems, setCartItems, total, setTotal}) => {
     const handleRemove=(id)=>{
         setCartItems(cartItems.filter(item=>item.id!==id));
         setTotal(total-cart.price)
+        toast.warning(`${cart.name} removed from cart`)
     }
   return (
     <div className="bg-[#f9fafcFF] p-5 rounded-2xl flex justify-between items-center">
@@ -17,7 +20,7 @@ const Cart = ({ cart, cartItems, setCartItems, total, setTotal}) => {
         </div>
       </div>
       <div>
-        <button onClick={()=>handleRemove(cart.id, cart.price)} className="text-red-600">Remove</button>
+        <button onClick={()=>handleRemove(cart.id, cart.price, cart.name)} className="text-red-600 font-bold border-none btn hover:btn-soft hover:btn-error hover:text-white">Remove</button>
       </div>
     </div>
   );

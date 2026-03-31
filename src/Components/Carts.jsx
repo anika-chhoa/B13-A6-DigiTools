@@ -1,4 +1,5 @@
 
+import { toast } from "react-toastify";
 import cartImg from "../assets/products/shopping-cart.png";
 import Cart from "./Cart";
 
@@ -6,6 +7,7 @@ const Carts = ({ cartItems, setCartItems, total, setTotal }) => {
     const handleCheckout=()=>{
         setCartItems([]);
         setTotal(0)
+        toast.success("Proceeding to checkout...");
     }
     
   return (
