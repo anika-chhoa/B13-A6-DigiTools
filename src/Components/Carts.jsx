@@ -3,9 +3,13 @@ import cartImg from "../assets/products/shopping-cart.png";
 import Cart from "./Cart";
 
 const Carts = ({ cartItems, setCartItems, total, setTotal }) => {
+    const handleCheckout=()=>{
+        setCartItems([]);
+        setTotal(0)
+    }
     
   return (
-    <div>
+    <div className="mb-16">
       {cartItems.length === 0 ? (
         <div className="max-w-7xl mx-auto mt-10 p-10 border border-gray-200 rounded-2xl bg-white shadow-sm">
           <h1 className="text-2xl font-bold">Your Cart</h1>
@@ -38,7 +42,7 @@ const Carts = ({ cartItems, setCartItems, total, setTotal }) => {
             <p className="text-[#101727FF] text-2xl font-bold">${total}</p>
           </div>
           <button
-            onClick={() => setCartItems([])}
+            onClick={()=>handleCheckout()}
             className="btn btn-block rounded-[100px] bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white px-4 py-3 font-bold border-none mt-6"
           >
             Proceed To Checkout

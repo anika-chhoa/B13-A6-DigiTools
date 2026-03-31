@@ -4,7 +4,6 @@ import GetStartedItem from "./GetStartedItem";
 
 const GetStarted = ({getStartedData}) => {
     const getStartedItems=use(getStartedData);
-    console.log(getStartedItems)
   return (
     <div className="bg-[#f9fafcFF]">
       <div className="max-w-7xl mx-auto py-[120px]">
@@ -14,7 +13,7 @@ const GetStarted = ({getStartedData}) => {
         <p className="py-4 mb-4 text-[#627382FF] text-center mb-10">
           Start using premium digital tools in minutes, not hours.
         </p>
-        <div className="grid grid-cols-3 gap-[30px]">
+        <div className="grid lg:grid-cols-3 gap-[30px]">
           {getStartedItems.map(getStartedItem=><GetStartedItem key={getStartedItem.id} getStartedItem={getStartedItem}></GetStartedItem>)}
         </div>
       </div>

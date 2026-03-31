@@ -1,7 +1,7 @@
 import React from 'react';
 import cartImg from "../assets/products/shopping-cart.png"
 
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
     return (
         <div>
             <div className="navbar bg-base-100 max-w-7xl mx-auto">
@@ -32,7 +32,12 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-2 md:space-x-4">
-    <img src={cartImg} alt="" />
+    <div className='relative'>
+      <img src={cartImg} alt="" />
+    {cartItems.length>0 && <div className="badge badge-xs rounded-full bg-red-600 text-white font-bold border-0 shadow-none absolute -top-2 -right-2 px-1.5">
+      {cartItems.length}
+    </div>}
+    </div>
     <p className='text-[#101727FF] font-semibold hidden md:flex'>Login</p>
     <button className="btn bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white px-4 py-3 rounded-[1000px] font-semibold border-none hidden md:flex">Get Started</button>
   </div>
