@@ -1,4 +1,7 @@
-const Card = ({ product }) => {
+import { useState } from "react";
+import { FaCheck } from "react-icons/fa";
+
+const Card = ({ product, cartItems, setCartItems}) => {
   const tagStyles = {
     Popular: {
       bg: "bg-[#e1e7ffFF]",
@@ -13,9 +16,15 @@ const Card = ({ product }) => {
       text: "text-[#0a883eFF]",
     },
   };
+  const [buyNowStatus, setBuyNowStatus] = useState(true);
+
+  const handleBuyNowBtn = ({ product }) => {
+    return setBuyNowStatus(false);
+  };
+
   return (
     <div>
-      <div className="card max-w-96 mx-auto bg-base-100 rounded-2xl relative border border-[#f2f2f2FF] p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-xl">
+      <div className="card max-w-96 mx-auto bg-base-100 rounded-2xl relative border border-[#f2f2f2FF] p-6 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-xl">
         {product.tag && (
           <span
             className={`badge badge-xs ${tagStyles[product.tagType].bg} ${tagStyles[product.tagType].text} rounded-full border-0 px-3 py-2 flex justify-center items-center absolute top-2 right-2`}
@@ -63,8 +72,18 @@ const Card = ({ product }) => {
             })}
           </ul>
           <div className="mt-6">
-            <button className="btn btn-block rounded-[100px]  bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white px-4 py-3 font-bold border-none">
-              Buy Now
+            <button
+              onClick={() => handleBuyNowBtn(product)}
+              className={`btn btn-block rounded-[100px]  ${buyNowStatus?"bg-gradient-to-b from-[#4f39f6] to-[#9514fa]":"btn-success"} text-white px-4 py-3 font-bold border-none`}
+            >
+              {buyNowStatus ? (
+                "Buy Now"
+              ) : (
+                <>
+                  <FaCheck className="inline mr-2" />
+                  Added To Cart
+                </>
+              )}
             </button>
           </div>
         </div>
