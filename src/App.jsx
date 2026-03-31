@@ -15,6 +15,7 @@ function App() {
   const dataPromise = fetchData();
   const [activeTab,setActiveTab]=useState("products");
   const [cartItems,setCartItems]=useState([]);
+  const [total,setTotal]=useState(0);
 
   
 
@@ -22,13 +23,13 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      {/* <StatSection /> */}
-      <Tab activeTab={activeTab} setActiveTab={setActiveTab}/>
+      <StatSection />
+      <Tab activeTab={activeTab} setActiveTab={setActiveTab} cartItems={cartItems}/>
       {activeTab==="products" && <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-        <Cards dataPromise={dataPromise} cartItems={cartItems} setCartItems={setCartItems}/>
+        <Cards dataPromise={dataPromise} cartItems={cartItems} setCartItems={setCartItems} total={total} setTotal={setTotal}/>
       </Suspense>}
       {activeTab==="carts" && <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-        <Carts cartItems={cartItems} setCartItems={setCartItems}/>
+        <Carts cartItems={cartItems} setCartItems={setCartItems} total={total} setTotal={setTotal}/>
       </Suspense>}
       
       

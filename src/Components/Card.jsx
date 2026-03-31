@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 
-const Card = ({ product, cartItems, setCartItems}) => {
+const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
   const tagStyles = {
     Popular: {
       bg: "bg-[#e1e7ffFF]",
@@ -19,7 +19,9 @@ const Card = ({ product, cartItems, setCartItems}) => {
   const [buyNowStatus, setBuyNowStatus] = useState(true);
 
   const handleBuyNowBtn = ({ product }) => {
-    return setBuyNowStatus(false);
+    setBuyNowStatus(false);
+    setCartItems([...cartItems, product]);
+    setTotal(total+product.price)
   };
 
   return (
@@ -73,8 +75,8 @@ const Card = ({ product, cartItems, setCartItems}) => {
           </ul>
           <div className="mt-6">
             <button
-              onClick={() => handleBuyNowBtn(product)}
-              className={`btn btn-block rounded-[100px]  ${buyNowStatus?"bg-gradient-to-b from-[#4f39f6] to-[#9514fa]":"btn-success"} text-white px-4 py-3 font-bold border-none`}
+              onClick={() => handleBuyNowBtn({product})}
+              className={`btn btn-block rounded-[100px]  ${buyNowStatus ? "bg-gradient-to-b from-[#4f39f6] to-[#9514fa]" : "btn-success"} text-white px-4 py-3 font-bold border-none`}
             >
               {buyNowStatus ? (
                 "Buy Now"

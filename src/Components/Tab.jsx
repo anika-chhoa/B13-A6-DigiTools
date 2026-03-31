@@ -1,4 +1,4 @@
-const Tab = ({activeTab, setActiveTab}) => {
+const Tab = ({activeTab, setActiveTab, cartItems}) => {
   return (
     <div>
       <h1 className="text-3xl lg:text-5xl font-extrabold text-center text-[#101727FF] mb-4">
@@ -25,7 +25,7 @@ const Tab = ({activeTab, setActiveTab}) => {
             name="my_tabs_1"
             onClick={()=>setActiveTab("carts")}
             className={`tab ${activeTab==="carts" ? "bg-gradient-to-b from-[#4f39f6] to-[#9514fa] text-white":"bg-white text-black"} rounded-[1000px] font-semibold`}
-            aria-label="Cart"
+            aria-label={cartItems.length>0?`Cart(${cartItems.length})`:`Cart`}
           />
         </div>
       </div>
