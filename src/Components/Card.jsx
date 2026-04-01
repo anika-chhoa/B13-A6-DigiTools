@@ -41,9 +41,9 @@ const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
       <div className="card max-w-96 mx-auto bg-base-100 rounded-2xl relative border border-[#f2f2f2FF] p-6 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-xl">
         {product.tag && (
           <span
-            className={`badge badge-xs ${tagStyles[product.tagType].bg} ${tagStyles[product.tagType].text} rounded-full border-0 px-3 py-2 flex justify-center items-center absolute top-2 right-2`}
+            className={`badge ${tagStyles[product.tagType].bg} ${tagStyles[product.tagType].text} rounded-full border-0 px-3 py-2 flex justify-center items-center absolute top-2 right-2`}
           >
-            {product.tag}
+            {product.tagType}
           </span>
         )}
         <div className="w-[60px] h-[60px] border border-gray-200 rounded-full flex justify-center items-center">
