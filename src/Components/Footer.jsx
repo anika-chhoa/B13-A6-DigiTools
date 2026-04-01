@@ -37,34 +37,30 @@ const Footer = () => {
         <nav>
           <h6 className="text-xl font-medium text-white">Social Links</h6>
           <div className="flex gap-4">
-            <a
-              className="w-10 h-10 rounded-full bg-white flex justify-center items-center hover:bg-gray-100 transition-all border border-gray-200 hover:border-gray-300"
-            >
+            <a className="w-10 h-10 rounded-full bg-white flex justify-center items-center hover:bg-gray-100 transition-all border border-gray-200 hover:border-gray-300">
               <AiFillInstagram className="text-2xl text-gray-700" />
             </a>
 
-            <a
-              className="w-10 h-10 rounded-full bg-white flex justify-center items-center hover:bg-gray-100 transition-all border border-gray-200 hover:border-gray-300"
-            >
+            <a className="w-10 h-10 rounded-full bg-white flex justify-center items-center hover:bg-gray-100 transition-all border border-gray-200 hover:border-gray-300">
               <FaFacebookSquare className="text-2xl text-gray-700" />
             </a>
 
-            <a
-              className="w-10 h-10 rounded-full bg-white flex justify-center items-center hover:bg-gray-100 transition-all border border-gray-200 hover:border-gray-300"
-            >
+            <a className="w-10 h-10 rounded-full bg-white flex justify-center items-center hover:bg-gray-100 transition-all border border-gray-200 hover:border-gray-300">
               <BsTwitterX className="text-2xl text-gray-700" />
             </a>
           </div>
         </nav>
       </footer>
-      <div className="max-w-7xl mx-auto px-6 lg:px-0 text-white border-base-300 border-t border-[#e5e7ebFF] py-4">
-        <div className="lg:flex lg:justify-between w-full">
-            <p className="text-[#fafafaFF]">© 2026 Digitools. All rights reserved.</p>
-            <div className="flex gap-3">
-                <p className="text-[#fafafaFF]">Privacy Policy</p>
-                <p className="text-[#fafafaFF]">Terms of Service</p>
-                <p className="text-[#fafafaFF]">Cookies</p>
-            </div>
+      <div className="max-w-7xl mx-auto  lg:px-0 text-white border-base-300 border-t border-[#e5e7ebFF] py-4">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-0 w-full">
+          <p className="text-[#fafafaFF]">
+            © 2026 Digitools. All rights reserved.
+          </p>
+          <div className="flex gap-2 lg:gap-3">
+            <p className="text-[#fafafaFF]">Privacy Policy</p>
+            <p className="text-[#fafafaFF]">Terms of Service</p>
+            <p className="text-[#fafafaFF]">Cookies</p>
+          </div>
         </div>
       </div>
     </div>

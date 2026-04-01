@@ -90,14 +90,6 @@ const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
               onClick={() => handleBuyNowBtn({ product })}
               className={`btn btn-block rounded-[100px]  ${isAdded ? "btn-success" : "bg-gradient-to-b from-[#4f39f6] to-[#9514fa]"} text-white px-4 py-3 font-bold border-none`}
             >
-              {/* {buyNowStatus ? (
-                "Buy Now"
-              ) : (
-                <>
-                  <FaCheck className="inline mr-2" />
-                  Added To Cart
-                </>
-              )} */}
               {isAdded ? (
                 <>
                   <FaCheck className="inline mr-2" />
