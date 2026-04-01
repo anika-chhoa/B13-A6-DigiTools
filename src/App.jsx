@@ -1,4 +1,3 @@
-// import { Suspense, useState } from "react";
 import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./Components/Banner";
@@ -9,8 +8,9 @@ import StatSection from "./Components/StatSection";
 import Tab from "./Components/Tab";
 import GetStarted from "./Components/GetStarted";
 import Pricing from "./Components/Pricing";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import ExploreProducts from "./Components/ExploreProducts";
+import Footer from "./Components/Footer";
 
 const fetchData = async () => {
     const res = await fetch("/Tools.json");
@@ -69,10 +69,10 @@ function App() {
           />
         </Suspense>
       )}
-      {/* <GetStarted getStartedData={getStartedData}></GetStarted> */}
       <GetStarted getStartedData={getStartedData}></GetStarted>
       <Pricing/>
       <ExploreProducts/>
+      <Footer/>
 
 
       <ToastContainer />
