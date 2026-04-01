@@ -47,7 +47,7 @@ const Card = ({ product, cartItems, setCartItems, total, setTotal }) => {
           </span>
         )}
         <div className="w-[60px] h-[60px] border border-gray-200 rounded-full flex justify-center items-center">
-          <span className="w-8 h-8 flex justify-center items-center">
+          <span className="flex justify-center items-center">
             {product.icon}
           </span>
         </div>

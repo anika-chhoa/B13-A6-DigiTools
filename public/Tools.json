@@ -12,7 +12,8 @@
       "50+ writing tones & styles",
       "SEO optimization"
     ],
-    "icon": "✍️"
+    "icon": "✍️",
+    "image":"https://i.ibb.co.com/8DF3wjMf/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
       "Figma, Canva & PSD formats",
       "Commercial license included"
     ],
-    "icon": "🎨"
+    "icon": "🎨",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
       "Weekly new uploads",
       "4K photos & vectors"
     ],
-    "icon": "📸"
+    "icon": "📸",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   },
   {
     "id": 4,
@@ -57,7 +60,8 @@
       "Drag & drop workflow builder",
       "Unlimited automations"
     ],
-    "icon": "⚙️"
+    "icon": "⚙️",
+    "image":"https://i.ibb.co.com/8DF3wjMf/writing-2327400-1.png"
   },
   {
     "id": 5,
@@ -72,7 +76,8 @@
       "100+ modern templates",
       "AI content suggestions"
     ],
-    "icon": "📄"
+    "icon": "📄",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   },
   {
     "id": 6,
@@ -87,7 +92,8 @@
       "AI subtitles & captions",
       "4K export support"
     ],
-    "icon": "🎥"
+    "icon": "🎥",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   },
   {
     "id": 7,
@@ -102,7 +108,8 @@
       "AI content suggestions",
       "Advanced analytics"
     ],
-    "icon": "📱"
+    "icon": "📱",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   },
   {
     "id": 8,
@@ -117,7 +124,8 @@
       "Second brain system",
       "Lifetime updates"
     ],
-    "icon": "📋"
+    "icon": "📋",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   },
   {
     "id": 9,
@@ -132,6 +140,7 @@
       "Unlimited color palettes",
       "Brand guideline builder"
     ],
-    "icon": "🌟"
+    "icon": "🌟",
+    "image":"https://i.ibb.co.com/0RM89npz/design-tool.png"
   }
 ]
